@@ -1,0 +1,101 @@
+/* Reset Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+    --spot-white: #ffffff;
+    --spot-black: #000000;
+    --spot-grey: #5A5A5A;
+    --spot-whitegrey: #C0C0C0;
+    --spot-darkblue: #141922;
+    --spot-dark: #090B13;
+    --spot-accent: #ABFF2E;
+}
+
+
+/* Debug */
+
+.debug #site_header {
+    width: 100%;
+    background-color: green;
+    height: 10vh;
+}
+
+.debug #sidebar {
+    height: 85vh;
+    background-color: purple;
+    width: 15vw;
+    display: flex;
+
+}
+
+.debug #site_main {
+    background-color: rgb(255, 247, 0);
+    height: 75vh;
+}
+
+.debug .row {
+    border: 2px dashed red;
+}
+
+.debug .col-12 {
+    border: 2px dashed rgb(25, 0, 255);
+}
+
+.debug .typologies {
+    background-color: orange;
+}
+
+.debug #site_player {
+    background-color: blue;
+    height: 15vh;
+}
+
+
+
+
+/* Utility */
+.d-flex {
+    display: flex;
+}
+
+.dir-col {
+    flex-direction: column;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+
+
+/* Common */
+.container {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0.5rem;
+}
+
+[class^="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+#site_main {
+    overflow-y: auto;
+}
+
+.typologies p {
+    width: 70%;
+    margin: auto;
+}
