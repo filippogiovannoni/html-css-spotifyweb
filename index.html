@@ -6,12 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="debug">
+<body class="">
 
     <div class="container d-flex">
-        <div id="sidebar"></div>
+        <div id="sidebar">
+            <div class="logo d-flex align-center">
+                <img id="spotify" src="./img/favicon.ico" alt="Spotify Logo">
+                <h3>Spotify</h3>
+            </div>
+            <div class="menu">
+                <a href="#">
+                    <div class="home d-flex align-center">
+                        <div class="accent"></div>
+                        <img id="home" src="./img/home.svg" alt="home">
+                        <h5>Home</h5>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="search d-flex align-center">
+                        <img id="search" src="./img/search.svg" alt="home">
+                        <h5>Cerca</h5>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="library d-flex align-center">
+                        <img id="library" src="./img/libreria.svg" alt="home">
+                        <h5>Libreria</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="playlist">
+                <h6 class="uppercase">Playlist</h6>
+                <a href="#">
+                    <div class="create d-flex align-center">
+                        <div class="square d-flex align-center justify-center">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <h5>Crea playlist</h5>
+                    </div>
+                </a>
+                <div class="name">
+                    <a href="#">
+                        <h5>Nome Playlist</h5>
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="#">
+                        <h5>Nome Playlist</h5>
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="#">
+                        <h5>Nome Playlist</h5>
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="#">
+                        <h5>Nome Playlist</h5>
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="#">
+                        <h5>Nome Playlist</h5>
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="#">
+                        <h5>Nome Playlist</h5>
+                    </a>
+                </div>
+                <div class="name">
+                    <a href="#">
+                        <h5>Nome Playlist</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="install d-flex align-center">
+                <i class="fa-regular fa-circle-down"></i>
+                <a href="#">
+                    <h5>Installa app</h5>
+                </a>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="user d-flex align-center">
+                <img src="./img/profile.svg" alt="user">
+                <h5>John Doe</h5>
+            </div>
+        </div>
         <!-- /#sidebar -->
 
         <div class="container d-flex dir-col">
@@ -23,7 +114,6 @@
                 <div class="typologies">
                     <p class="txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-
                 <div class="row">
                     <div class="col-12">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque vel aliquam laborum.
