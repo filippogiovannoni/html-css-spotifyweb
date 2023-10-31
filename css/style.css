@@ -11,7 +11,7 @@
     --spot-black: #000000;
     --spot-grey: #5A5A5A;
     --spot-whitegrey: #C0C0C0;
-    --spot-darkblue: #141922;
+    --spot-darkblue: #191824;
     --spot-dark: #090B13;
     --spot-accent: #ABFF2E;
 }
@@ -83,6 +83,19 @@
     justify-content: center;
 }
 
+.btn {
+    border-radius: 30px;
+    border: 1px solid var(--spot-white);
+    color: var(--spot-white);
+    font-size: 11px;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
 
 
 /* Common */
@@ -107,6 +120,8 @@ body {
 a {
     text-decoration: none;
 }
+
+
 
 
 #site_main {
@@ -274,3 +289,33 @@ a {
 }
 
 /* End Sidebar */
+
+/* Header */
+
+#site_header {
+    background-color: var(--spot-darkblue);
+    padding: 1rem;
+    height: 10vh;
+
+    & a {
+        text-align: end;
+    }
+}
+
+.button a {
+    transition: transform 100ms;
+}
+
+.button a:hover {
+    transform: scale(1.1)
+}
+
+/* End Header */
+
+#site_player {
+    height: 15vh;
+}
+
+#site_main {
+    height: 75vh;
+}
