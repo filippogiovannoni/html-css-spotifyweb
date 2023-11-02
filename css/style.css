@@ -11,7 +11,9 @@
     --spot-black: #000000;
     --spot-grey: #5A5A5A;
     --spot-whitegrey: #C0C0C0;
+    --spot-lightgrey: #878891;
     --spot-darkblue: #191824;
+    --spot-blue: #272B35;
     --spot-dark: #090B13;
     --spot-accent: #ABFF2E;
 }
@@ -96,7 +98,13 @@
     justify-content: end;
 }
 
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
 
+.pl-1 {
+    padding-left: 1rem;
+}
 
 /* Common */
 body {
@@ -110,11 +118,13 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem 0.5rem;
+    margin: 0 -0.5rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
 }
 
 [class^="col-"] {
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 a {
@@ -181,7 +191,7 @@ a {
 
 }
 
-.accent {
+.accent-y {
     height: 20px;
     width: 2px;
     background-color: var(--spot-accent);
@@ -311,6 +321,111 @@ a {
 }
 
 /* End Header */
+
+/* Main */
+
+#site_main {
+    background-color: var(--spot-blue);
+}
+
+.typologies .container {
+    width: 70%;
+    margin: auto;
+    gap: 2rem;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+
+    & h5 {
+        color: var(--spot-lightgrey);
+    }
+}
+
+.underline {
+    position: relative;
+}
+
+.typologies h5:hover {
+    color: var(--spot-white);
+}
+
+.accent-x {
+    height: 2px;
+    width: 30px;
+    background-color: var(--spot-accent);
+    position: absolute;
+    left: 30px;
+    margin-top: 0.25rem;
+}
+
+#site_main h1 {
+    color: var(--spot-white);
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    font-size: 28px;
+}
+
+.col-2 img {
+    width: 100%;
+}
+
+.col-2 h4 {
+    color: var(--spot-white);
+    padding: 0.75rem 0 0.5rem 0;
+    font-size: 14px;
+}
+
+.col-2 h6 {
+    color: var(--spot-lightgrey);
+}
+
+#site_main h6 {
+    color: var(--spot-lightgrey);
+    font-size: 11px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.song {
+    position: relative;
+}
+
+.song {
+    position: relative;
+}
+
+.play {
+    position: absolute;
+    color: var(--spot-white);
+    font-size: 50px;
+    bottom: 35%;
+    right: 35%;
+    opacity: 0;
+}
+
+
+.song:hover .album {
+    filter: opacity(0.5);
+}
+
+.song:hover .play {
+    opacity: 1;
+}
+
+/* End Site Main */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #site_player {
     height: 15vh;
