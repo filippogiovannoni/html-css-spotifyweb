@@ -110,6 +110,15 @@
 .g-1 {
     gap: 1rem;
 }
+
+.space-btw {
+    justify-content: space-between;
+}
+
+.p-b-1 {
+    padding-bottom: 1rem;
+}
+
 /* Common */
 body {
     font-family: 'Montserrat', sans-serif;
@@ -210,7 +219,7 @@ a {
 
 
 .playlist {
-    margin: 1rem 0 11.5rem 0;
+    margin: 1rem 0 0rem 0;
 }
 
 .playlist h6 {
@@ -459,16 +468,19 @@ a {
 
 .love {
     margin: 0 2rem;
+
     & a {
         color: var(--spot-grey);
     }
 }
 
-.fa-heart, .fa-folder {
+.fa-heart,
+.fa-folder {
     font-size: 20px;
 }
 
-.fa-heart:hover, .fa-folder:hover {
+.fa-heart:hover,
+.fa-folder:hover {
     color: var(--spot-whitegrey);
 }
 
