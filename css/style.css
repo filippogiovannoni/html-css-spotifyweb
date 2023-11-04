@@ -598,3 +598,9 @@ a .fa-circle-play {
         width: 90%;
     }
 }
+
+@media screen and (max-width: 638px) {
+    .col-6-s {
+        width: calc(100% / 12 * 6);
+    }
+}
