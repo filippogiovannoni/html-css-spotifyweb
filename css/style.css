@@ -585,3 +585,16 @@ a .fa-circle-play {
 }
 
 /* End Site Player */
+
+/* Media Queries Desktop First */
+
+@media screen and (max-width: 876px){
+
+    .col-3-md {
+        width: calc(100% / 12 * 3);
+    }
+
+    .typologies .container {
+        width: 90%;
+    }
+}
