@@ -163,12 +163,15 @@ a {
     padding-left: 1.5rem;
     padding-right: 1rem;
     height: 87.5vh;
-    overflow-y: auto;
     position: relative;
 }
 
 .logo {
     margin: 0.5rem 3rem 1rem 0;
+}
+
+.logo-small {
+    display: none;
 }
 
 #spotify {
@@ -603,4 +606,56 @@ a .fa-circle-play {
     .col-6-s {
         width: calc(100% / 12 * 6);
     }
+
+    .song-button i {
+        padding: 0.25rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    #sidebar {
+        width: 10vw;
+        padding-left: 1rem;
+        align-items: center;
+    }
+
+    .logo, .menu h5, .user h5, .playlist, .install h5 {
+        display: none;
+    }
+
+    .menu {
+        font-size: 20px;
+    }
+
+    .logo-small {
+        display: block;
+        margin: 0.5rem 0;
+        width: 25px;
+    }
+
+    .home {
+        padding-bottom: 1rem;
+    }
+
+    .sidebar-bottom {
+        align-items: center;
+    }
+
+    .accent-y {
+        display: none;
+    }
+
+    .song-button i {
+        font-size: 16px;
+        padding: 0.25rem;
+    }
+
+    .song-button .fa-circle-play {
+        font-size: 20px;
+    }
+
+    a .fa-circle-play {
+        margin: 0.5rem;
+    }
+  
+
 }
