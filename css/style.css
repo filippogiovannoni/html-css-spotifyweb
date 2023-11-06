@@ -615,7 +615,6 @@ a .fa-circle-play {
         width: 90%;
     }
 }
-
 @media screen and (max-width: 638px) {
     .col-6-s {
         width: calc(100% / 12 * 6);
@@ -670,6 +669,31 @@ a .fa-circle-play {
     a .fa-circle-play {
         margin: 0.5rem;
     }
-  
+}
+@media screen and (max-height: 350px) {
+    #site_player {
+        height: 50vh;
+    }
 
+    .typologies .container {
+        width: 90%;
+    }
+
+    #sidebar {
+        height: 50vh;
+        overflow-y: hidden;
+    }
+
+    #site_header {
+        height: 30vh;
+    }
+
+    #site_main {
+        height: 20vh;
+    }
+
+    .love {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
 }
