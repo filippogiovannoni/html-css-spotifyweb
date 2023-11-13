@@ -177,6 +177,19 @@ a {
 #spotify {
     filter: invert(1);
     margin: 0.5rem 0.5rem 0.5rem 0;
+    animation-name: logo;
+    animation-duration: 3s;
+    
+}
+
+@keyframes logo {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .logo h3 {
